@@ -4,49 +4,205 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#071f46" />
-  <meta name="description" content="لاباركوه نيوز - أخبار تشاد وأفريقيا والعالم والرياضة" />
+  <meta
+    name="description"
+    content="لاباركوه نيوز - أخبار تشاد وأفريقيا والعالم والرياضة"
+  />
+
   <title>لاباركوه نيوز | Labarkouh News</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <a class="skip-link" href="#mainContent" data-i18n="skip">الانتقال إلى المحتوى</a>
+  <a class="skip-link" href="#mainContent" data-i18n="skip">
+    الانتقال إلى المحتوى
+  </a>
+
   <header class="site-header">
     <div class="container topbar">
-      <a class="brand" href="#" aria-label="Labarkouh News"><span class="brand-mark" aria-hidden="true">🇹🇩</span><span id="brandName">لاباركوه نيوز</span></a>
+      <a class="brand" href="#" aria-label="Labarkouh News">
+        <span class="brand-mark" aria-hidden="true">🇹🇩</span>
+        <span id="brandName">لاباركوه نيوز</span>
+      </a>
+
       <div class="header-controls">
-        <button class="icon-button" id="notificationButton" type="button" aria-label="الإشعارات" title="الإشعارات"><span aria-hidden="true">♧</span><span class="notification-dot"></span></button>
+        <button
+          class="icon-button"
+          id="notificationButton"
+          type="button"
+          aria-label="الإشعارات"
+          title="الإشعارات"
+        >
+          <span aria-hidden="true">♧</span>
+          <span class="notification-dot"></span>
+        </button>
+
         <div class="language-switcher" aria-label="اختيار اللغة">
-          <button type="button" class="active" data-language="ar">العربية</button><button type="button" data-language="fr">Français</button><button type="button" data-language="en">English</button>
+          <button type="button" class="active" data-language="ar">
+            العربية
+          </button>
+
+          <button type="button" data-language="fr">
+            Français
+          </button>
+
+          <button type="button" data-language="en">
+            English
+          </button>
         </div>
-        <button class="icon-button" id="themeButton" type="button" aria-label="تغيير المظهر" title="تغيير المظهر"><span aria-hidden="true">☾</span></button>
+
+        <button
+          class="icon-button"
+          id="themeButton"
+          type="button"
+          aria-label="تغيير المظهر"
+          title="تغيير المظهر"
+        >
+          <span aria-hidden="true">☾</span>
+        </button>
       </div>
     </div>
-    <div class="ticker" aria-live="polite"><strong class="ticker-label" data-i18n="breaking">عاجل</strong><div class="ticker-window"><p id="tickerText">متابعة مستمرة لأبرز أخبار تشاد وأفريقيا والعالم والرياضة</p></div></div>
+
+    <div class="ticker" aria-live="polite">
+      <strong class="ticker-label" data-i18n="breaking">
+        عاجل
+      </strong>
+
+      <div class="ticker-window">
+        <p id="tickerText">
+          متابعة مستمرة لأبرز أخبار تشاد وأفريقيا والعالم والرياضة
+        </p>
+      </div>
+    </div>
   </header>
 
   <main id="mainContent" class="container">
-    <section class="hero" aria-labelledby="pageTitle">
-      <div class="hero-text"><p class="eyebrow"><span class="live-dot"></span><span data-i18n="eyebrow">تغطية مستمرة</span></p><h1 id="pageTitle" data-i18n="headline">آخر الأخبار من تشاد والعالم</h1><p class="hero-copy" data-i18n="heroCopy">تابع الأخبار العاجلة والتحليلات والقصص التي تهم المجتمع التشادي.</p></div>
-      <div class="hero-orb" aria-hidden="true"><span>✦</span><span>🌍</span><span>✦</span></div>
-    </section>
 
     <nav class="categories" aria-label="أقسام الأخبار">
-      <button class="category active" type="button" data-category="all"><span aria-hidden="true">✦</span><span data-i18n="all">الرئيسية</span></button>
-      <button class="category" type="button" data-category="chad"><span aria-hidden="true">🇹🇩</span><span data-i18n="chad">تشاد</span></button>
-      <button class="category" type="button" data-category="africa"><span aria-hidden="true">🌍</span><span data-i18n="africa">أفريقيا</span></button>
-      <button class="category" type="button" data-category="world"><span aria-hidden="true">🌐</span><span data-i18n="world">العالم</span></button>
-      <button class="category" type="button" data-category="sports"><span aria-hidden="true">⚽</span><span data-i18n="sports">الرياضة</span></button>
+      <button class="category active" type="button" data-category="all">
+        <span aria-hidden="true">✦</span>
+        <span data-i18n="all">الرئيسية</span>
+      </button>
+
+      <button class="category" type="button" data-category="chad">
+        <span aria-hidden="true">🇹🇩</span>
+        <span data-i18n="chad">تشاد</span>
+      </button>
+
+      <button class="category" type="button" data-category="africa">
+        <span aria-hidden="true">🌍</span>
+        <span data-i18n="africa">أفريقيا</span>
+      </button>
+
+      <button class="category" type="button" data-category="world">
+        <span aria-hidden="true">🌐</span>
+        <span data-i18n="world">العالم</span>
+      </button>
+
+      <button class="category" type="button" data-category="sports">
+        <span aria-hidden="true">⚽</span>
+        <span data-i18n="sports">الرياضة</span>
+      </button>
     </nav>
 
     <section class="content-layout">
-      <section aria-labelledby="latestTitle"><div class="section-title-row"><div><p class="section-kicker" data-i18n="discover">استكشف الآن</p><h2 id="latestTitle" data-i18n="latest">أحدث الأخبار</h2></div><span class="results" id="resultsCount"></span></div><div class="news-grid" id="newsGrid"></div><p class="empty-state hidden" id="emptyState" data-i18n="empty">لا توجد أخبار في هذا القسم حاليًا.</p></section>
-      <aside class="sidebar"><section class="sidebar-card" id="sourcesBox" aria-label="مصادر موثوقة"></section><section class="sidebar-card"><h2 data-i18n="popular">الأكثر قراءة</h2><ol class="popular-list" id="popularList"></ol></section><section class="sidebar-card newsletter"><span class="newsletter-icon" aria-hidden="true">✉</span><h2 data-i18n="newsletter">نشرة لاباركوه</h2><p data-i18n="newsletterCopy">ملخص يومي لأهم الأخبار، يصل إلى بريدك الإلكتروني.</p><form id="newsletterForm"><label class="sr-only" for="email" data-i18n="emailLabel">البريد الإلكتروني</label><input id="email" type="email" required data-i18n-placeholder="emailPlaceholder" placeholder="بريدك الإلكتروني" /><button type="submit" data-i18n="subscribe">اشترك الآن</button></form><p class="form-message" id="formMessage" role="status"></p></section></aside>
+      <section aria-labelledby="latestTitle">
+        <div class="section-title-row">
+          <h2 id="latestTitle" data-i18n="latest">
+            أحدث الأخبار
+          </h2>
+
+          <span class="results" id="resultsCount"></span>
+        </div>
+
+        <div class="news-grid" id="newsGrid"></div>
+
+        <p class="empty-state hidden" id="emptyState" data-i18n="empty">
+          لا توجد أخبار في هذا القسم حاليًا.
+        </p>
+      </section>
+
+      <aside class="sidebar">
+        <section
+          class="sidebar-card"
+          id="sourcesBox"
+          aria-label="مصادر موثوقة"
+        ></section>
+
+        <section class="sidebar-card">
+          <h2 data-i18n="popular">الأكثر قراءة</h2>
+          <ol class="popular-list" id="popularList"></ol>
+        </section>
+
+        <section class="sidebar-card newsletter">
+          <span class="newsletter-icon" aria-hidden="true">✉</span>
+
+          <h2 data-i18n="newsletter">
+            نشرة لاباركوه
+          </h2>
+
+          <p data-i18n="newsletterCopy">
+            ملخص يومي لأهم الأخبار، يصل إلى بريدك الإلكتروني.
+          </p>
+
+          <form id="newsletterForm">
+            <label class="sr-only" for="email" data-i18n="emailLabel">
+              البريد الإلكتروني
+            </label>
+
+            <input
+              id="email"
+              type="email"
+              required
+              placeholder="بريدك الإلكتروني"
+              data-i18n-placeholder="emailPlaceholder"
+            />
+
+            <button type="submit" data-i18n="subscribe">
+              اشترك الآن
+            </button>
+          </form>
+
+          <p
+            class="form-message"
+            id="formMessage"
+            role="status"
+          ></p>
+        </section>
+      </aside>
     </section>
   </main>
-  <footer class="site-footer"><div class="container footer-content"><div><a class="brand footer-brand" href="#"><span class="brand-mark" aria-hidden="true">🇹🇩</span><span id="footerBrand">لاباركوه نيوز</span></a><p data-i18n="footerCopy">منصة أخبار مستقلة تهتم بتشاد وأفريقيا والعالم.</p></div><p>© <span id="year"></span> Labarkouh News</p></div></footer>
-  <div class="toast" id="toast" role="status" aria-live="polite"></div><script src="app.js"></script>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <a class="brand footer-brand" href="#">
+          <span class="brand-mark" aria-hidden="true">🇹🇩</span>
+          <span id="footerBrand">لاباركوه نيوز</span>
+        </a>
+
+        <p data-i18n="footerCopy">
+          منصة أخبار مستقلة تهتم بتشاد وأفريقيا والعالم.
+        </p>
+      </div>
+
+      <p>
+        © <span id="year"></span> Labarkouh News
+      </p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
 </body>
 </html>
