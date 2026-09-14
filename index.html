@@ -1,278 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ETS C.A.B.C - Chad Africa Business Commercial</title>
-    
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#b31217">
-    <link rel="apple-touch-icon" href="images/logo1.jpg">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
-        :root {
-            --primary-color: #b31217;
-            --gold-color: #d4af37;
-            --dark-color: #1a1a1a;
-            --light-color: #f8f9fa;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: var(--light-color);
-            color: #333;
-            line-height: 1.6;
-            padding-bottom: 80px;
-        }
-
-        /* Header */
-        header {
-            background: linear-gradient(135deg, var(--primary-color), #600000);
-            color: white;
-            text-align: center;
-            padding: 35px 15px 25px;
-            border-bottom: 4px solid var(--gold-color);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-        }
-
-        header h1 {
-            font-size: 2.2rem;
-            margin-bottom: 5px;
-            letter-spacing: 1px;
-            color: #fff;
-        }
-
-        header p {
-            font-size: 1.1rem;
-            color: #f3e5ab;
-        }
-
-        .director-tag {
-            margin-top: 12px;
-            display: inline-block;
-            background: rgba(255,255,255,0.15);
-            padding: 6px 18px;
-            border-radius: 20px;
-            font-size: 0.95rem;
-            border: 1px solid var(--gold-color);
-        }
-
-        /* Container */
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 15px;
-        }
-
-        /* Buttons */
-        .action-buttons {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            margin-bottom: 25px;
-        }
-
-        .btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            padding: 16px;
-            border-radius: 12px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1rem;
-            color: white;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.12);
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .btn:active {
-            transform: scale(0.98);
-        }
-
-        .btn-whatsapp {
-            background-color: #25D366;
-        }
-
-        .btn-email {
-            background-color: var(--primary-color);
-        }
-
-        /* Cards */
-        .card {
-            background: white;
-            border-radius: 14px;
-            padding: 20px;
-            margin-bottom: 25px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.06);
-            border-right: 5px solid var(--primary-color);
-        }
-
-        .card h2 {
-            color: var(--primary-color);
-            margin-bottom: 15px;
-            font-size: 1.3rem;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        /* Gallery Grid */
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-            gap: 15px;
-            margin-top: 15px;
-        }
-
-        .gallery-card {
-            border-radius: 10px;
-            overflow: hidden;
-            border: 2px solid #e0e0e0;
-            background: #fff;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-            transition: border-color 0.3s;
-        }
-
-        .gallery-card:hover {
-            border-color: var(--gold-color);
-        }
-
-        .gallery-card img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-            display: block;
-        }
-
-        /* Services List */
-        .services-list {
-            list-style: none;
-        }
-
-        .services-list li {
-            padding: 10px 0;
-            border-bottom: 1px solid #eee;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-size: 0.95rem;
-        }
-
-        .services-list li:last-child {
-            border-bottom: none;
-        }
-
-        .services-list i {
-            color: var(--gold-color);
-            font-size: 1.1rem;
-        }
-
-        .info-item {
-            margin-bottom: 10px;
-            font-size: 0.95rem;
-        }
-
-        /* Footer */
-        .bottom-nav {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: var(--dark-color);
-            color: white;
-            text-align: center;
-            padding: 14px;
-            font-size: 0.85rem;
-            border-top: 2px solid var(--gold-color);
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#082d63" />
+  <meta name="description" content="لاباركوه نيوز - أخبار تشاد وأفريقيا والعالم والرياضة" />
+  <title>لاباركوه نيوز | Labarkouh News</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#mainContent" data-i18n="skip">الانتقال إلى المحتوى</a>
 
-    <header>
-        <h1>ETS C.A.B.C</h1>
-        <p>Chad Africa Business Commercial</p>
-        <p style="font-size: 0.9rem; margin-top: 4px;">Commerce Général - Import & Export</p>
-        <div class="director-tag">
-            <i class="fa-solid fa-user-tie"></i> Directeur Général: ISSA YOUSSOUF ISSA
+  <header class="site-header">
+    <div class="container topbar">
+      <a class="brand" href="#" aria-label="Labarkouh News">
+        <span class="flag" aria-hidden="true">🇹🇩</span>
+        <span id="brandName">لاباركوه نيوز</span>
+      </a>
+
+      <div class="header-controls">
+        <button class="icon-button" id="notificationButton" type="button" aria-label="الإشعارات" title="الإشعارات">
+          <span aria-hidden="true">♧</span><span class="notification-dot"></span>
+        </button>
+        <div class="language-switcher" aria-label="اختيار اللغة">
+          <button type="button" class="active" data-language="ar">العربية</button>
+          <button type="button" data-language="fr">Français</button>
+          <button type="button" data-language="en">English</button>
         </div>
-    </header>
-
-    <div class="container">
-
-        <div class="action-buttons">
-            <a href="https://wa.me/23566822206" class="btn btn-whatsapp" target="_blank">
-                <i class="fa-brands fa-whatsapp fa-xl"></i> واتساب
-            </a>
-            <a href="mailto:etscabc@gmail.com" class="btn btn-email">
-                <i class="fa-solid fa-envelope fa-xl"></i> الإيميل
-            </a>
-        </div>
-
-        <div class="card">
-            <h2><i class="fa-solid fa-images"></i> الشعارات والمعرض المرفق</h2>
-            <div class="gallery-grid">
-                <div class="gallery-card">
-                    <img src="images/logo1.jpg" alt="الشعار الدائري الرئيسي">
-                </div>
-                <div class="gallery-card">
-                    <img src="images/logo2.jpg" alt="المعرض والمركز التقني">
-                </div>
-                <div class="gallery-card">
-                    <img src="images/logo3.jpg" alt="شعار المنتدى العالمي WCI">
-                </div>
-                <div class="gallery-card">
-                    <img src="images/logo4.jpg" alt="بطاقة المكتب الفاخرة">
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <h2><i class="fa-solid fa-list-check"></i> خدماتنا وأنشطة الشركة</h2>
-            <ul class="services-list">
-                <li><i class="fa-solid fa-check-circle"></i> Vente de Produits Agro-alimentaires (المنتجات الغذائية)</li>
-                <li><i class="fa-solid fa-check-circle"></i> Fournitures d'Equipements Bureau & Informatiques (المعدات المكتبية)</li>
-                <li><i class="fa-solid fa-check-circle"></i> Matériels de Construction, Electricité & Plomberie</li>
-                <li><i class="fa-solid fa-check-circle"></i> Construction & Réhabilitation de Bâtiments (البناء والصيانة)</li>
-                <li><i class="fa-solid fa-check-circle"></i> Panneaux Solaires, Forages & Châteaux d'Eau (الطاقة الشمسية والمياه)</li>
-                <li><i class="fa-solid fa-check-circle"></i> Vente et Location de Véhicules & Kits NFI (السيارات)</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h2><i class="fa-solid fa-address-card"></i> البيانات الرسمية والتواصل</h2>
-            <div class="info-item"><strong>المقر الاجتماعي:</strong> Bololo, 2ème Arrond. N'Djamena - Tchad</div>
-            <div class="info-item"><strong>صندوق البريد:</strong> BP: 102 N'Djamena - Tchad</div>
-            <div class="info-item"><strong>أرقام الهاتف:</strong> +235 66 82 22 06 / +235 99 82 22 06</div>
-            <div class="info-item"><strong>البريد الإلكتروني:</strong> etscabc@gmail.com</div>
-            <div class="info-item"><strong>RCCM:</strong> TC-NDJ-012017A10-01351</div>
-            <div class="info-item"><strong>NIF:</strong> 9040218J | <strong>CNPS:</strong> 201706042065</div>
-        </div>
-
+        <button class="icon-button" id="themeButton" type="button" aria-label="تغيير المظهر" title="تغيير المظهر"><span aria-hidden="true">☾</span></button>
+      </div>
     </div>
 
-    <div class="bottom-nav">
-        &copy; 2026 ETS C.A.B.C - جميع الحقوق محفوظة
+    <div class="ticker" aria-live="polite">
+      <strong class="ticker-label" data-i18n="breaking">عاجل</strong>
+      <div class="ticker-window"><p id="tickerText">متابعة مستمرة لأبرز أخبار تشاد وأفريقيا والعالم والرياضة</p></div>
     </div>
+  </header>
 
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('sw.js')
-                    .then(reg => console.log('PWA Service Worker Registered'))
-                    .catch(err => console.log('Service Worker Error', err));
-            });
-        }
-    </script>
+  <main id="mainContent" class="container">
+    <section class="hero" aria-labelledby="pageTitle">
+      <div>
+        <p class="eyebrow" data-i18n="eyebrow">أخبار موثوقة، بلغة قريبة منك</p>
+        <h1 id="pageTitle" data-i18n="headline">آخر الأخبار من تشاد والعالم</h1>
+        <p class="hero-copy" data-i18n="heroCopy">تابع الأخبار العاجلة والتحليلات والقصص التي تهم المجتمع التشادي.</p>
+      </div>
+      <div class="date-card">
+        <span data-i18n="today">اليوم</span>
+        <strong id="todayDate"></strong>
+      </div>
+    </section>
+
+    <nav class="categories" aria-label="أقسام الأخبار">
+      <button class="category active" type="button" data-category="all"><span aria-hidden="true">✦</span><span data-i18n="all">الرئيسية</span></button>
+      <button class="category" type="button" data-category="chad"><span aria-hidden="true">🇹🇩</span><span data-i18n="chad">تشاد</span></button>
+      <button class="category" type="button" data-category="africa"><span aria-hidden="true">🌍</span><span data-i18n="africa">أفريقيا</span></button>
+      <button class="category" type="button" data-category="world"><span aria-hidden="true">🌐</span><span data-i18n="world">العالم</span></button>
+      <button class="category" type="button" data-category="sports"><span aria-hidden="true">⚽</span><span data-i18n="sports">الرياضة</span></button>
+    </nav>
+
+    <section class="content-layout">
+      <section aria-labelledby="latestTitle">
+        <div class="section-title-row">
+          <h2 id="latestTitle" data-i18n="latest">أحدث الأخبار</h2>
+          <span class="results" id="resultsCount"></span>
+        </div>
+        <div class="news-grid" id="newsGrid"></div>
+        <p class="empty-state hidden" id="emptyState" data-i18n="empty">لا توجد أخبار في هذا القسم حاليًا.</p>
+      </section>
+
+      <aside class="sidebar">
+        <section class="sidebar-card" id="sourcesBox" aria-label="مصادر موثوقة"></section>
+        <section class="sidebar-card">
+          <h2 data-i18n="popular">الأكثر قراءة</h2>
+          <ol class="popular-list" id="popularList"></ol>
+        </section>
+        <section class="sidebar-card newsletter">
+          <span class="newsletter-icon" aria-hidden="true">✉</span>
+          <h2 data-i18n="newsletter">نشرة لاباركوه</h2>
+          <p data-i18n="newsletterCopy">ملخص يومي لأهم الأخبار، يصل إلى بريدك الإلكتروني.</p>
+          <form id="newsletterForm">
+            <label class="sr-only" for="email" data-i18n="emailLabel">البريد الإلكتروني</label>
+            <input id="email" type="email" required data-i18n-placeholder="emailPlaceholder" placeholder="بريدك الإلكتروني" />
+            <button type="submit" data-i18n="subscribe">اشترك الآن</button>
+          </form>
+          <p class="form-message" id="formMessage" role="status"></p>
+        </section>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <a class="brand footer-brand" href="#"><span class="flag" aria-hidden="true">🇹🇩</span><span id="footerBrand">لاباركوه نيوز</span></a>
+        <p data-i18n="footerCopy">منصة أخبار مستقلة تهتم بتشاد وأفريقيا والعالم.</p>
+      </div>
+      <p>© <span id="year"></span> Labarkouh News</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
 </body>
 </html>
